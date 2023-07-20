@@ -1,0 +1,144 @@
+@import url(normalize.css);
+#logoContainers {
+  width: 100%;
+  height: 120px;
+  background-image: url("../images/white.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  position: absolute;
+  top: 75%;
+  z-index: 10;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white; }
+  #logoContainers .logos {
+    display: block;
+    overflow: visible;
+    list-style: none;
+    width: 50%;
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; }
+    #logoContainers .logos li {
+     float: left;}
+      #logoContainers .logos li a:visited, #logoContainers .logos li a:link, #logoContainers .logos li a:active {
+        display: block;
+        width: 200px;
+        height: 80px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px; }
+        #logoContainers .logos li a:visited[rel="marine"], #logoContainers .logos li a:link[rel="marine"], #logoContainers .logos li a:active[rel="marine"] {
+          width: 235px;
+          background-image: url("../images/logo-king.png");
+          background-repeat: no-repeat;
+          margin: 0 0 0 20px;
+          background-position: 0px 0; }
+        #logoContainers .logos li a:visited[rel="composite"], #logoContainers .logos li a:link[rel="composite"], #logoContainers .logos li a:active[rel="composite"] {
+          width: 154px;
+          background-image: url("../images/logo-composite.png");
+          background-repeat: no-repeat;
+          margin: 0 20px 0 20px;
+          background-position: 0px 0; }
+        #logoContainers .logos li a:visited[rel="agro"], #logoContainers .logos li a:link[rel="agro"], #logoContainers .logos li a:active[rel="agro"] {
+          width: 139px;
+          background-image: url("../images/logo-agro.png");
+          background-repeat: no-repeat;
+          background-position: 0px 0;
+          margin: 0 20px 0 20px; }
+        #logoContainers .logos li a:visited[rel="harken"], #logoContainers .logos li a:link[rel="harken"], #logoContainers .logos li a:active[rel="harken"] {
+          width: 200px;
+          background-image: url("../images/logo-harken.png");
+          background-repeat: no-repeat;
+          background-position: 0px 0; }
+        #logoContainers .logos li a:visited:hover, #logoContainers .logos li a:link:hover, #logoContainers .logos li a:active:hover {
+          background-position: 0 -80px;}
+
+
+#mainBanner {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+  #mainBanner .next, #mainBanner .previous {
+    position: absolute;
+    z-index: 10;
+    display: none;
+    width: 29px;
+    height: 29px;
+    cursor: pointer; }
+  #mainBanner .next {
+    margin-left: 941px;
+    margin-top: 130px;
+    background-image: url("../images/banner-buttons.png");
+    background-repeat: no-repeat;
+    background-position: -28px 0; }
+    #mainBanner .next:hover {
+      background-image: url("../images/banner-buttons.png");
+      background-repeat: no-repeat;
+      background-position: -28px -28px; }
+  #mainBanner .previous {
+    margin-left: -23px;
+    margin-top: 130px;
+    background-image: url("../images/banner-buttons.png");
+    background-repeat: no-repeat;
+    background-position: 0 0; }
+    #mainBanner .previous:hover {
+      background-image: url("../images/banner-buttons.png");
+      background-repeat: no-repeat;
+      background-position: 0 -28px; }
+
+#slidebox {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+  #slidebox .content {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative; }
+  #slidebox .thumbs {
+    position: absolute;
+    z-index: 2;
+    padding: 0px 8px;
+    top: 15px;
+    right: 15px;
+    background-image: url("../images/white.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; }
+    #slidebox .thumbs .thumb {
+      display: block;
+      float: left;
+      font-family: arial;
+      font-size: 40px;
+      line-height: 25px;
+      margin: 0px 5px;
+      text-decoration: none;
+      color: #666666; }
+      #slidebox .thumbs .thumb:hover {
+        color: white; }
+  #slidebox .selected_thumb {
+    display: block;
+    float: left;
+    margin: 0px 5px;
+    font-family: arial;
+    font-size: 40px;
+    line-height: 25px;
+    text-decoration: none;
+    color: white; }
+  #slidebox .container {
+    position: relative;
+    left: 0; }
+  #slidebox .content {
+    background: #f4f4f4;
+    float: left;
+    overflow: hidden;
+    background-image: url("../images/loading.gif");
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
